@@ -1,0 +1,45 @@
+.cardList {
+  /* border: 1px solid #ddd; */
+  padding: 1rem;
+}
+
+.cardContent {
+  /* display: flex; */
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.product {
+  /* display: flex; */
+  align-items: flex-start;
+}
+
+.productImage {
+  width: 8rem;
+  max-width: 20em;
+  margin-right: 14rem;
+}
+
+.productDetails {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 0.5em;
+}
+
+.productName {
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.productPrice {
+  margin: 0;
+  font-size: 1rem;
+  color: #666;
+}
+
+.totalPrice {
+  font-size: 1.2rem;
+  font-weight: bold;
+}

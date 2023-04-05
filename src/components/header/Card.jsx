@@ -1,49 +1,8 @@
-// import React, { useState } from "react";
-// import { AiOutlineShoppingCart } from "react-icons/ai";
-// import { BsX } from "react-icons/bs";
-// // import "./App.css";
-
-// function App() {
-//   const [cartOpen, setCartOpen] = useState(false);
-
-//   const handleCartOpen = () => {
-//     setCartOpen(true);
-//   };
-
-//   const handleCartClose = () => {
-//     setCartOpen(false);
-//   };
-
-//   return (
-//     <div className="App">
-//       <header className="header">
-//         <div className="basket-icon" onClick={handleCartOpen}>
-//           <AiOutlineShoppingCart />
-//         </div>
-//         <div className="title">{/* <h1>My E-commerce App</h1> */}</div>
-//       </header>
-//       {cartOpen && (
-//         <div className="cart-container">
-//           <div className="cart-header">
-//             <h2>Shopping Cart</h2>
-//             <div className="close-icon" onClick={handleCartClose}>
-//               <BsX />
-//             </div>
-//           </div>
-//           <div className="cart-content">
-//             {/* Your cart items and checkout form here */}
-//           </div>
-//         </div>
-//       )}
-//     </div>
-//   );
-// }
-
-// export default App;
-
 import React, { useState } from "react";
 import { AiOutlineClose } from "react-icons/ai";
 import { BiShoppingBag } from "react-icons/bi";
+import CartItems from "./CartItems";
+import { product } from "../../assets/data/data";
 import "./card.css";
 
 const Card = () => {
@@ -85,22 +44,16 @@ const Card = () => {
                 <AiOutlineClose />
               </button>
             </div>
-            <div className="cartItems">
-              {cartItems.map((item, index) => (
-                <div key={index} className="cartItem">
-                  <div className="itemImage">
-                    <img src={item.image} alt={item.name} />
-                  </div>
-                  <div className="itemDetails">
-                    <h3>{item.name}</h3>
-                    <p>{item.price}</p>
-                    <button onClick={() => removeFromCart(index)}>
-                      Remove
-                    </button>
-                  </div>
-                </div>
-              ))}
-            </div>
+            {product.slice(0, 1).map((item) => (
+              <CartItems
+                id={item.id}
+                cover={item.cover}
+                name={item.name}
+                price={item.price}
+                quantity={item.quantity}
+                totalPrice={item.totalPrice}
+              />
+            ))}
             <div className="cartFooter">
               <p>Total: {cartTotal}</p>
               <button>Checkout</button>
