@@ -1,0 +1,61 @@
+.App {
+  font-family: sans-serif;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #eee;
+}
+
+.basket-icon {
+  cursor: pointer;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.cart-container {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 50%;
+  background-color: #fff;
+  box-shadow: -5px 0 5px rgba(0, 0, 0, 0.1);
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+}
+
+.cart-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #eee;
+}
+
+.cart-header h2 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.close-icon {
+  cursor: pointer;
+}
+
+.cart-content {
+  flex: 1;
+  padding: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .cart-container {
+    width: 100%;
+  }
+}
