@@ -1,0 +1,41 @@
+.order-process {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: #f2f2f2;
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.step {
+  flex: 1;
+  text-align: center;
+  margin: 20px;
+}
+
+.number {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.step h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.step p {
+  font-size: 16px;
+  margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+  .order-process {
+    flex-direction: column;
+  }
+
+  .step {
+    margin: 20px 0;
+  }
+}

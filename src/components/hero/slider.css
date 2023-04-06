@@ -1,0 +1,19 @@
+.container {
+  display: flex;
+  justify-content: center; /* Centers the flex items horizontally */
+  align-items: center; /* Centers the flex items vertically */
+}
+
+.img {
+  display: flex;
+  flex: 1; /* Makes the flex items take up equal space */
+}
+
+.img img {
+  /* background-color: aqua; */
+  cursor: pointer;
+  flex: 1; /* Makes the images take up equal space */
+  margin: 1em 1em; /* Adds some margin between the images */
+  max-width: 100%; /* Makes sure the images don't overflow their container */
+  border-radius: 1em;
+}
