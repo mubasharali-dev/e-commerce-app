@@ -26,7 +26,6 @@ function Header() {
             <Card />
             <User />
           </div>
-          {/* <div className="account flexCenter"></div> */}
         </div>
       </header>
     </div>

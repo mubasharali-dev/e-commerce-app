@@ -9,7 +9,6 @@
   align-items: flex-start;
   margin: 1em;
   cursor: pointer;
-  /* background-color: #444444; */
 }
 
 .searchIcon {
@@ -46,4 +45,57 @@ input:focus {
 .account {
   align-items: flex-end;
   right: 0;
+}
+@media screen and (max-width: 550px) {
+  .logo img {
+    height: 1.5rem;
+  }
+
+  .search {
+    display: none;
+    margin-top: 0.5rem;
+    margin-right: 0.5rem;
+  }
+
+  .search__input {
+    flex: 1;
+  }
+
+  .header__content {
+    flex-wrap: wrap;
+  }
+
+  .header__content > * {
+    width: 100%;
+    margin-bottom: 0.5rem;
+  }
+}
+
+@media screen and (min-width: 551px) and (max-width: 992px) {
+  .logo img {
+    margin: 0.5em;
+    height: 1.75rem;
+  }
+
+  .search {
+    /* display: none; */
+    margin-left: 1em;
+    /* width: 10em; */
+    /* margin-top: 0.5rem; */
+  }
+
+  .search__input {
+    flex: 1;
+  }
+}
+
+@media screen and (min-width: 993px) {
+  .logo img {
+    height: 3rem;
+  }
+
+  .search {
+    margin-left: 4em;
+    /* margin-right: 1rem; */
+  }
 }
