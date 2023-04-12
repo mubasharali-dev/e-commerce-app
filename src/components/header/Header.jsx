@@ -1,30 +1,47 @@
-import React from "react";
+import React, { useState } from "react";
 import Medicine from "../../assets/images/Medicine.svg";
 import { AiOutlineSearch } from "react-icons/ai";
+import { FaUser } from "react-icons/fa";
 import Card from "./Card";
-import User from "./User";
-import header from "./header.css";
+import "./header.css";
 
 function Header() {
-  window.addEventListener("scroll", function () {
-    const header = this.document.querySelector(".header");
-    header.classList.toggle("active", this.window.scrollY > 100);
-  });
-  window.scrollTo({ top: document.body.scrollHeight, behaviour: "smooth" });
+  // Define the showMenu state to handle dropdown visibility
+  const [showMenu, setShowMenu] = useState(false);
+
+  // Toggle the visibility of the dropdown menu
+  const toggleMenu = () => {
+    setShowMenu(!showMenu);
+  };
+
   return (
     <div>
       <header className="header">
         <div className="scontainer flex">
           <div className="logo">
-            <img src={Medicine} />
+            <img src={Medicine} alt="Medicine logo" />
             <span>
               <div className="search flex">
                 <AiOutlineSearch className="searchIcon" />
-                <input type="text" placeholder="Search ..." />
+                <input type="text" placeholder="Search" />
               </div>
             </span>
             <Card />
-            <User />
+            <div className="profile" onClick={toggleMenu}>
+              {/* Add user icon */}
+              <FaUser className="profileIcon" aria-label="Profile Icon" />
+              {/* Display dropdown menu if showMenu is true */}
+              {showMenu && (
+                <div className="profile-dropdown">
+                  <ul>
+                    <li>My Account</li>
+                    <li>My Orders</li>
+                    <li>Password</li>
+                    <li>Logout</li>
+                  </ul>
+                </div>
+              )}
+            </div>
           </div>
         </div>
       </header>
