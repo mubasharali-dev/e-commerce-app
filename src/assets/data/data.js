@@ -5,7 +5,7 @@ export const slide = [
   { image: "../images/slide/slide2.png" },
   { image: "../images/slide/slide3.png" },
   { image: "../images/slide/slide4.png" },
-]
+];
 export const order = [
   {
     id: 1,
@@ -27,7 +27,7 @@ export const order = [
     title: "And Deliver",
     desc: "There are many variations of passages of Lorem Ipsum available",
   },
-]
+];
 export const category = [
   {
     id: 1,
@@ -89,7 +89,7 @@ export const category = [
     title: "Household",
     cover: "../images/category/ca12.jpg",
   },
-]
+];
 export const product = [
   {
     id: 1,
@@ -291,7 +291,7 @@ export const product = [
   },
   {
     id: 23,
-    name: "La Roche-Posay Hydraphase Intense Masque",
+    name: "La Roche-Posay Hydraphase Intense",
     price: 12.0,
     qty: 1,
     category: "Beauty Care",
@@ -307,4 +307,13 @@ export const product = [
     cover: "../images/product/product24.png",
     desc: "The term cleanser refers to a product that cleans or removes dirt or other substances. A cleanser could be a detergent, and there are many types of cleansers that are produced with a specific objective or focus.",
   },
-]
+  {
+    id: 25,
+    name: " D Supreme Liposomal",
+    price: 10.0,
+    qty: 1,
+    category: "Medicine & First Aid",
+    cover: "../images/product/product24.png",
+    desc: "The term cleanser refers to a product that cleans or removes dirt or other substances. A cleanser could be a detergent, and there are many types of cleansers that are produced with a specific objective or focus.",
+  },
+];

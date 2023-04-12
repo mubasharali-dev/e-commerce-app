@@ -1,0 +1,21 @@
+.footer-container {
+  background-color: #f5f5f5;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-text {
+  margin: 0;
+  font-size: 14px;
+}
+
+.footer-social-icons {
+  display: flex;
+}
+
+.icon {
+  font-size: 24px;
+  margin-left: 10px;
+}

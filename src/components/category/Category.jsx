@@ -28,7 +28,8 @@ function SampleNextArrow(props) {
         ...style,
         ...arrowStyles,
         right: 10,
-        background: "#111111",
+
+        background: "black",
       }}
       onClick={onClick}
     />
@@ -45,7 +46,7 @@ function SamplePrevArrow(props) {
         ...arrowStyles,
         left: 10,
         marginTop: ".5em",
-        background: "grey",
+        background: "black",
         color: "black",
       }}
       onClick={onClick}
@@ -93,12 +94,12 @@ export default class Category extends Component {
       <div
         style={{
           overflowX: "hidden",
-          margin: "0.3em 0",
+          margin: "2.5em 0.5em",
           padding: "10px",
           cursor: "pointer",
         }}
       >
-        <h2 style={{ margin: "0.5em" }}> Categories </h2>
+        {/* <h2 style={{ margin: "0.6em" }}> Categories </h2> */}
         <Slider {...settings}>
           <div
             style={{

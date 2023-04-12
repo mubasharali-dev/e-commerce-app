@@ -1,0 +1,12 @@
+.container.grid3 {
+  margin: 1em;
+  padding: 1em;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(calc(25% - 2% * 3), 1fr));
+  grid-gap: 1%;
+}
+.product-heading {
+  margin: 0.5em;
+  font-size: 2.5em;
+  /* padding: 1em; */
+}
