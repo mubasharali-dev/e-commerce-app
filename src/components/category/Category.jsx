@@ -12,11 +12,15 @@ const arrowStyles = {
   zIndex: 1,
   top: "50%",
   transform: "translateY(-50%)",
-  width: 30,
-  height: 30,
+  width: 20,
+  height: 20,
   cursor: "pointer",
   backgroundColor: "white",
-  color: "white",
+  color: "black",
+  border: "solid black",
+  borderWidth: "0 4px 4px 0",
+  boxShadow: "none", // remove box shadow
+  outline: "none", // remove outline
 };
 
 function SampleNextArrow(props) {
@@ -28,8 +32,9 @@ function SampleNextArrow(props) {
         ...style,
         ...arrowStyles,
         right: 10,
-
-        background: "black",
+        color: "white",
+        backgroundColor: "transparent",
+        transform: "rotate(320deg)",
       }}
       onClick={onClick}
     />
@@ -46,13 +51,15 @@ function SamplePrevArrow(props) {
         ...arrowStyles,
         left: 10,
         marginTop: ".5em",
-        background: "black",
+        backgroundColor: "transparent",
         color: "black",
+        transform: "rotate(135deg)",
       }}
       onClick={onClick}
     />
   );
 }
+
 export default class Category extends Component {
   render() {
     var settings = {

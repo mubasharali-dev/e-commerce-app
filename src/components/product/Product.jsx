@@ -7,7 +7,7 @@ function Product() {
   return (
     <section className="product">
       <h1 className="product-heading">Products</h1>
-      <div className="container grid3">
+      <div className="product-container">
         {product.map((item) => (
           <ProductCart
             key={item.id}

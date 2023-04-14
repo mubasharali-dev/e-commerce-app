@@ -13,9 +13,25 @@
 
 .footer-social-icons {
   display: flex;
+  font-size: 0.8em;
+  margin-right: 4.5em;
 }
 
 .icon {
-  font-size: 24px;
+  font-size: 2em;
   margin-left: 10px;
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+  }
+
+  .footer-social-icons {
+    flex-wrap: wrap;
+  }
+
+  .icon {
+    margin: 0.5em;
+  }
 }
