@@ -2,7 +2,7 @@ import React from "react";
 import "./product.css";
 import { product } from "../../assets/data/data";
 import ProductCart from "./ProductCart";
-
+// product function
 function Product() {
   return (
     <section className="product">
