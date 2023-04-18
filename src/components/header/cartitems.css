@@ -1,16 +1,38 @@
-.cardList {
-  /* border: 1px solid #ddd; */
+.productName {
+  font-weight: bold;
+  color: #333;
+}
+
+.plusIcon,
+.minusIcon {
+  font-size: 1.2rem;
+  color: #fff;
+  background-color: #333;
+  border-radius: 50%;
+  padding: 0.3rem;
+  cursor: pointer;
+}
+
+.plusIcon:hover,
+.minusIcon:hover {
+  background-color: #555;
+}
+
+.priceTitle {
+  font-weight: bold;
+  color: #008080;
+}
+
+/* .cardList {
   padding: 1rem;
 }
 
 .cardContent {
-  /* display: flex; */
   align-items: flex-start;
   justify-content: space-between;
 }
 
 .product {
-  /* display: flex; */
   align-items: flex-start;
 }
 
@@ -42,4 +64,4 @@
 .totalPrice {
   font-size: 1.2rem;
   font-weight: bold;
-}
+} */

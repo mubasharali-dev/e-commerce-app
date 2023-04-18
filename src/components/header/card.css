@@ -1,4 +1,144 @@
-.cardContainer {
+/* .card {
+  position: relative;
+  cursor: pointer;
+} */
+/* .card {
+  background-color: #555;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  cursor: pointer;
+  z-index: 2;
+} */
+
+.card {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.shoppingIcon {
+  font-size: 1.5em;
+  color: #000000;
+}
+
+.flexCenter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: #000000;
+  color: #ffffff;
+  font-size: 12px;
+  margin-left: 5px;
+}
+
+.cardIcon {
+  font-size: 1.5rem;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.cartItem {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 400px;
+  background-color: #fff;
+  z-index: 2;
+  padding: 20px;
+  box-shadow: -5px 0 10px rgba(0, 0, 0, 0.5);
+  transition: all 0.3s ease-in-out;
+}
+
+.carthide {
+  display: none;
+}
+
+.title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.title h2 {
+  font-size: 1.5rem;
+}
+
+.closeButton {
+  size: 1rem;
+  background: none;
+  outline: 0;
+  border: 0;
+  cursor: pointer;
+}
+
+.icon {
+  font-size: 1rem;
+  color: #333;
+}
+.checkOut {
+  margin-top: 20px;
+  /* display: none; */
+}
+
+.checkOut button {
+  width: 100%;
+  padding: 10px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.checkOut button:hover {
+  background-color: #555;
+}
+
+.checkOut label {
+  font-size: 1.2rem;
+  margin-left: 10px;
+}
+
+.cartItem::-webkit-scrollbar {
+  width: 10px;
+  background-color: #f5f5f5;
+}
+
+.cartItem::-webkit-scrollbar-thumb {
+  background-color: #555;
+}
+
+.cartItem::-webkit-scrollbar-track {
+  background-color: #f5f5f5;
+}
+
+/* .cardContainer {
   position: relative;
 }
 
@@ -135,4 +275,4 @@
   color: #ffffff;
   font-size: 16px;
   cursor: pointer;
-}
+} */
