@@ -103,7 +103,7 @@ export const product = [
   {
     id: 2,
     name: "Acne Free Blackhead Removing Scrub",
-    price: 4.99,
+    price: 4,
     qty: 1,
     category: "beauty care",
     cover: "../images/product/product2.jpg",
@@ -112,7 +112,7 @@ export const product = [
   {
     id: 3,
     name: "Adori Energizer",
-    price: 40.0,
+    price: 40,
     qty: 1,
     category: "Pregnancy",
     cover: "../images/product/product3.jpg",
@@ -121,7 +121,7 @@ export const product = [
   {
     id: 4,
     name: "Agnesia Natural Feminine Hygiene Wash",
-    price: 15.0,
+    price: 15,
     qty: 1,
     category: "Feminine Hygiene",
     cover: "../images/product/product4.jpg",
@@ -130,7 +130,7 @@ export const product = [
   {
     id: 5,
     name: "Betadine Feminine Wash",
-    price: 18.0,
+    price: 18,
     qty: 1,
     category: "Feminine Hygiene",
     cover: "../images/product/product5.png",
@@ -139,7 +139,7 @@ export const product = [
   {
     id: 6,
     name: "Better Man Bladder Control",
-    price: 10.0,
+    price: 10,
     qty: 1,
     category: "Sexual Well-Being",
     cover: "../images/product/product6.jpg",
@@ -148,7 +148,7 @@ export const product = [
   {
     id: 7,
     name: "Biore Baking Soda Acne Scrub",
-    price: 6.99,
+    price: 6,
     qty: 1,
     category: "Beauty Care",
     cover: "../images/product/product7.jpg",
@@ -157,7 +157,7 @@ export const product = [
   {
     id: 8,
     name: "CBD Hemp Extract",
-    price: 89.95,
+    price: 89,
     qty: 1,
     category: "Oral Care",
     cover: "../images/product/product8.png",
@@ -166,7 +166,7 @@ export const product = [
   {
     id: 9,
     name: "Dial Spring Water Body Wash",
-    price: 8.0,
+    price: 8,
     qty: 1,
     category: "Household",
     cover: "../images/product/product9.png",
@@ -174,8 +174,8 @@ export const product = [
   },
   {
     id: 10,
-    name: "Durex – Extra Sensitive Condoms",
-    price: 2.0,
+    name: "Hair Oil",
+    price: 2,
     qty: 1,
     category: "Sexual Well-Being",
     cover: "../images/product/product10.png",
@@ -184,7 +184,7 @@ export const product = [
   {
     id: 11,
     name: "Ecover Rinse Aid",
-    price: 4.0,
+    price: 4,
     qty: 1,
     category: "Household",
     cover: "../images/product/product11.png",
@@ -193,7 +193,7 @@ export const product = [
   {
     id: 12,
     name: "First Aid Bag",
-    price: 50.0,
+    price: 50,
     qty: 1,
     category: "Medicine & First Aid",
     cover: "../images/product/product12.jpg",
@@ -210,8 +210,8 @@ export const product = [
   },
   {
     id: 14,
-    name: "First Response Multivitamin Gummy",
-    price: 9.99,
+    name: "First Response Multivitamin",
+    price: 9,
     qty: 1,
     category: "Contraceptive",
     cover: "../images/product/product14.png",
@@ -219,8 +219,8 @@ export const product = [
   },
   {
     id: 15,
-    name: "Himalaya For Moms",
-    price: 8.0,
+    name: "Himalaya",
+    price: 8,
     qty: 1,
     category: "Pregnancy",
     cover: "../images/product/product15.png",
@@ -229,7 +229,7 @@ export const product = [
   {
     id: 16,
     name: "Huggies Wonder Pants – 56Pcs",
-    price: 27.0,
+    price: 27,
     qty: 1,
     category: "Baby Care",
     cover: "../images/product/product16.png",
@@ -237,8 +237,8 @@ export const product = [
   },
   {
     id: 17,
-    name: "I-Pill Emergency Contraceptive Pill",
-    price: 2.99,
+    name: "Panadol",
+    price: 2,
     qty: 1,
     category: "Contraceptive",
     cover: "../images/product/product17.png",
@@ -246,8 +246,8 @@ export const product = [
   },
   {
     id: 18,
-    name: "Innermost The Recover Capsules",
-    price: 15.95,
+    name: "Paracetamol",
+    price: 15,
     qty: 1,
     category: "Medicine & First Aid",
     cover: "../images/product/product18.png",
@@ -255,8 +255,8 @@ export const product = [
   },
   {
     id: 19,
-    name: "Innermost The Tone Capsules",
-    price: 15.0,
+    name: "Get Formin",
+    price: 15,
     qty: 1,
     category: "Medicine & First Aid",
     cover: "../images/product/product19.png",
@@ -265,7 +265,7 @@ export const product = [
   {
     id: 20,
     name: "Johnson’s Baby Bath",
-    price: 25.0,
+    price: 25,
     qty: 1,
     category: "Baby Care",
     cover: "../images/product/product20.png",
@@ -274,7 +274,7 @@ export const product = [
   {
     id: 21,
     name: "Jolly Care",
-    price: 15.0,
+    price: 15,
     qty: 1,
     category: "Feminine Hygiene",
     cover: "../images/product/product21.jpg",
@@ -283,7 +283,7 @@ export const product = [
   {
     id: 22,
     name: "Kodomo Baby Bath",
-    price: 15.0,
+    price: 15,
     qty: 1,
     category: "Baby Care",
     cover: "../images/product/product22.png",
@@ -292,7 +292,7 @@ export const product = [
   {
     id: 23,
     name: "La Roche-Posay Hydraphase Intense",
-    price: 12.0,
+    price: 12,
     qty: 1,
     category: "Beauty Care",
     cover: "../images/product/product23.jpg",
@@ -301,7 +301,7 @@ export const product = [
   {
     id: 24,
     name: "Liposomal D Supreme",
-    price: 15.0,
+    price: 15,
     qty: 1,
     category: "Medicine & First Aid",
     cover: "../images/product/product24.png",
@@ -310,7 +310,7 @@ export const product = [
   {
     id: 25,
     name: " D Supreme Liposomal",
-    price: 10.0,
+    price: 10,
     qty: 1,
     category: "Medicine & First Aid",
     cover: "../images/product/product24.png",

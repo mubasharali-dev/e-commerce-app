@@ -21,7 +21,7 @@ const ProductCart = ({ id, name, price, cover }) => {
         <p className="product-name">{name}</p>
         <p className="product-price">${price}</p>
         <button className="add-to-cart" onClick={addToCart}>
-          <AiOutlinePlusCircle />
+          <AiOutlinePlusCircle className="plusIcon" />
         </button>
       </div>
     </div>

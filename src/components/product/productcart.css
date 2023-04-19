@@ -44,11 +44,11 @@
   background-color: #008cba;
   color: white;
   border: none;
-  border-radius: 5px;
-  padding: 5px 10px;
-  font-size: 16px;
+  padding: 0.3em 0.5em;
+  font-size: 1em;
   cursor: pointer;
   margin-top: 10px;
+  border-radius: 0.8em;
 }
 
 .add-to-cart:hover {
