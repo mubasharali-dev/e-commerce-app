@@ -174,7 +174,7 @@ export const product = [
   },
   {
     id: 10,
-    name: "Hair Oil",
+    name: "Hair Oil for Men",
     price: 2,
     qty: 1,
     category: "Sexual Well-Being",

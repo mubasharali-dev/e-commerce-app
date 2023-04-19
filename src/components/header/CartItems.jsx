@@ -4,7 +4,7 @@ import { useDispatch } from "react-redux";
 import { cartActions } from "../store/cartSlice";
 import "./cartitems.css";
 
-const CartItems = ({ id, name, price, quantity, showItem }) => {
+const CartItems = ({ id, name, price, quantity }) => {
   const dispatch = useDispatch();
 
   const incCartitems = () => {
@@ -15,32 +15,25 @@ const CartItems = ({ id, name, price, quantity, showItem }) => {
     dispatch(cartActions.removeFromCart(id));
   };
 
-  if (showItem) {
-    return null;
-  }
-
   return (
     <div className="cardList" key={id}>
       <div className="cartContent">
         <div className="details">
-          <p>{name}</p>
-          <h3>
-            <label htmlFor="">
-              Unit Price: <span className="price"> ${price} </span>
-            </label>
-          </h3>
-
+          <p className="product-name">{name}</p>
           <div className="price">
-            <div className="qty flexCenter">
-              <button className="plus" onClick={incCartitems}>
-                <AiOutlinePlus />
-              </button>
-              <button className="num">{quantity}</button>
-              <button className="minus" onClick={descCartitems}>
-                <AiOutlineMinus />
-              </button>
-            </div>
+            <span className="unitPrice">Unit Price:</span>
+            <span className="price-value">${price}</span>
           </div>
+        </div>
+
+        <div className="qty flexCenter">
+          <button className="plus" onClick={incCartitems}>
+            <AiOutlinePlus />
+          </button>
+          <button className="num">{quantity}</button>
+          <button className="minus" onClick={descCartitems}>
+            <AiOutlineMinus />
+          </button>
         </div>
       </div>
     </div>

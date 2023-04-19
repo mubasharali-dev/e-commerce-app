@@ -5,7 +5,9 @@ import product from "../../assets/data/data";
 import CartItems from "./CartItems";
 import { useSelector } from "react-redux";
 import "./card.css";
-import Checkout from "./Checkout";
+import Header from "./Header";
+import { Link } from "react-router-dom";
+import { Route } from "react-router-dom";
 
 export const Card = () => {
   const [cardOpen, setCardOpen] = useState(false);
@@ -17,7 +19,6 @@ export const Card = () => {
   const quantity = useSelector((state) => state.cart.totalQuantity);
   const cartItems = useSelector((state) => state.cart.itemsList);
 
-  //total
   let total = 0;
   const itemsLists = useSelector((state) => state.cart.itemsList);
   itemsLists.forEach((item) => {
@@ -36,7 +37,7 @@ export const Card = () => {
         <div className={cardOpen ? "cartItem" : "cardhide"}>
           {cardOpen && (
             <div className="title flex">
-              <h2>Shopping Cart</h2>
+              <h2>Shopping Card</h2>
               <button className="closeButton" onClick={closeCard}>
                 <AiOutlineClose className="icon" />
               </button>
@@ -57,7 +58,7 @@ export const Card = () => {
           {cardOpen && (
             <div className="checkOut">
               <button>
-                <span>Proceed To Checkout |</span>
+                <span>Place Order |</span>
                 <label htmlFor="">${total}</label>
               </button>
             </div>
