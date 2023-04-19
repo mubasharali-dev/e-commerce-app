@@ -1,3 +1,43 @@
+.product {
+  padding: 20px;
+}
+
+.product-heading {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.product-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/* Add media queries for responsive styles */
+@media screen and (max-width: 768px) {
+  .product-container {
+    flex-direction: column;
+  }
+}
+
+/* Adjust the first three items on the first horizontal line */
+.product-cart:nth-child(-n + 3) {
+  width: calc(33.33% - 10px);
+  margin-bottom: 20px;
+}
+
+/* Adjust the rest of the items on the second, third, and so on */
+.product-cart:nth-child(n + 4) {
+  width: calc(25% - 10px);
+  margin-bottom: 20px;
+}
+
+/* Add some spacing between each item */
+.product-cart {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
 /* .product-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -6,7 +46,7 @@
   margin-top: 2rem;
 } */
 
-.product-container {
+/* .product-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-gap: 0.5rem;
@@ -19,7 +59,7 @@
 
 .product-cart:nth-child(3n) {
   margin-right: 0;
-}
+} */
 
 /* @media screen and (min-width: 480px) {
   .product-container {

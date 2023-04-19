@@ -102,7 +102,7 @@ export const product = [
   },
   {
     id: 2,
-    name: "Acne Free Blackhead Removing Scrub",
+    name: "Blackhead Removing Scrub",
     price: 4,
     qty: 1,
     category: "beauty care",
@@ -120,7 +120,7 @@ export const product = [
   },
   {
     id: 4,
-    name: "Agnesia Natural Feminine Hygiene Wash",
+    name: "Feminine Hygiene Wash",
     price: 15,
     qty: 1,
     category: "Feminine Hygiene",
@@ -291,7 +291,7 @@ export const product = [
   },
   {
     id: 23,
-    name: "La Roche-Posay Hydraphase Intense",
+    name: "La Hydraphase Intense",
     price: 12,
     qty: 1,
     category: "Beauty Care",
@@ -302,15 +302,6 @@ export const product = [
     id: 24,
     name: "Liposomal D Supreme",
     price: 15,
-    qty: 1,
-    category: "Medicine & First Aid",
-    cover: "../images/product/product24.png",
-    desc: "The term cleanser refers to a product that cleans or removes dirt or other substances. A cleanser could be a detergent, and there are many types of cleansers that are produced with a specific objective or focus.",
-  },
-  {
-    id: 25,
-    name: " D Supreme Liposomal",
-    price: 10,
     qty: 1,
     category: "Medicine & First Aid",
     cover: "../images/product/product24.png",
