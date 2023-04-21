@@ -2,10 +2,12 @@ import React, { useState } from "react";
 import Medicine from "../../assets/images/Medicine.svg";
 import { AiOutlineSearch } from "react-icons/ai";
 import { FaUser } from "react-icons/fa";
+import { useNavigate } from "react-router-dom";
 import Card from "./Card";
 import "./header.css";
 
 function Header() {
+  const navigate = useNavigate();
   // Define the showMenu state to handle dropdown visibility
   const [showMenu, setShowMenu] = useState(false);
 
@@ -19,7 +21,11 @@ function Header() {
       <header className="header">
         <div className="scontainer flex">
           <div className="logo">
-            <img src={Medicine} alt="Medicine logo" />
+            <img
+              onClick={() => navigate(-1)}
+              src={Medicine}
+              alt="Medicine logo"
+            />
             <span>
               <div className="search flex">
                 <AiOutlineSearch className="searchIcon" />

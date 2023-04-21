@@ -1,17 +1,19 @@
-import logo from "./logo.svg";
 import "./App.css";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Header from "./components/header/Header";
 import Home from "./pages/home/Home";
 import Footer from "./components/footer/Footer";
+import Checkout from "./components/header/Checkout";
+
 function App() {
   return (
     <div className="App">
       <Router>
         <Header />
-        <Switch>
-          <Route exact path="/" component={Home} />
-        </Switch>
+        <Routes>
+          <Route exact path="/" element={<Home />} />
+          <Route path="checkout" component={<Checkout />} />
+        </Routes>
         <Footer />
       </Router>
     </div>

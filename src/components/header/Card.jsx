@@ -1,15 +1,13 @@
 import React, { useState } from "react";
 import { BiShoppingBag } from "react-icons/bi";
 import { AiOutlineClose } from "react-icons/ai";
-import product from "../../assets/data/data";
 import CartItems from "./CartItems";
 import { useSelector } from "react-redux";
+import { useNavigate } from "react-router-dom";
 import "./card.css";
-import Header from "./Header";
-import { Link } from "react-router-dom";
-import { Route } from "react-router-dom";
 
 export const Card = () => {
+  const navigate = useNavigate();
   const [cardOpen, setCardOpen] = useState(false);
 
   const closeCard = () => {
@@ -37,30 +35,44 @@ export const Card = () => {
         <div className={cardOpen ? "cartItem" : "cardhide"}>
           {cardOpen && (
             <div className="title flex">
-              <h2>Shopping Card</h2>
+              <h2>Shopping Cart</h2>
               <button className="closeButton" onClick={closeCard}>
                 <AiOutlineClose className="icon" />
               </button>
             </div>
           )}
 
-          {cartItems.map((item) => (
-            <CartItems
-              id={item.id}
-              cover={item.cover}
-              name={item.name}
-              price={item.price}
-              quantity={item.quantity}
-              totalPrice={item.totalPrice}
-            />
-          ))}
+          {cardOpen && (
+            <div className="cartItemsContainer">
+              <div className="cartItemsWrapper">
+                {cartItems.map((item) => (
+                  <CartItems
+                    key={item.id}
+                    id={item.id}
+                    cover={item.cover}
+                    name={item.name}
+                    price={item.price}
+                    quantity={item.quantity}
+                    totalPrice={item.totalPrice}
+                  />
+                ))}
+              </div>
+            </div>
+          )}
 
           {cardOpen && (
-            <div className="checkOut">
-              <button>
-                <span>Place Order |</span>
-                <label htmlFor="">${total}</label>
-              </button>
+            <div className="checkOutWrapper">
+              <div className="checkOut">
+                <button
+                  onClick={() => {
+                    navigate("checkout");
+                    closeCard(); // added call to closeCard function
+                  }}
+                >
+                  <span>Proceed to Checkout |</span>
+                  <label htmlFor="">${total}</label>
+                </button>
+              </div>
             </div>
           )}
         </div>

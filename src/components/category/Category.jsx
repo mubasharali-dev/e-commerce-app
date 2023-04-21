@@ -34,7 +34,7 @@ function SampleNextArrow(props) {
         right: 10,
         color: "white",
         backgroundColor: "transparent",
-        transform: "rotate(320deg)",
+        transform: "rotate(320deg)", // rotate arrow to point in a specific direction
       }}
       onClick={onClick}
     />
@@ -53,7 +53,7 @@ function SamplePrevArrow(props) {
         marginTop: ".5em",
         backgroundColor: "transparent",
         color: "black",
-        transform: "rotate(135deg)",
+        transform: "rotate(135deg)", // rotate arrow to point in a specific direction
       }}
       onClick={onClick}
     />

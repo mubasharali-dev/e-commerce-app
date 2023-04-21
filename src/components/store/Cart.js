@@ -4,7 +4,6 @@ import { useSelector } from "react-redux";
 function Cart() {
   const cartItems = useSelector((state) => state.cart.items);
   const totalQuantity = useSelector((state) => state.cart.totalQuantity);
-  let total = 0;
   return (
     <div>
       <h2>Cart</h2>
