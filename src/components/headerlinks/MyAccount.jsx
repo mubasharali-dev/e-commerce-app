@@ -1,15 +1,14 @@
 import React, { useState } from "react";
-import "./checkout.css";
+// import "./checkout.css";
+import "./myaccount.css";
 
-const Checkout = () => {
+const MyAccount = () => {
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
   const [phoneNumber, setPhoneNumber] = useState("");
   const [email, setEmail] = useState("");
-  const [address, setAddress] = useState("");
-  const [city, setCity] = useState("");
-  const [country, setCountry] = useState("");
-  const [zipcode, setZipcode] = useState("");
+  const [currentPassword, setCurrentPassword] = useState("");
+  const [newPassword, setNewPassword] = useState("");
 
   const handlePlaceOrder = () => {
     // Handle placing order logic here
@@ -19,15 +18,13 @@ const Checkout = () => {
     setLastName("");
     setPhoneNumber("");
     setEmail("");
-    setAddress("");
-    setCity("");
-    setCountry("");
-    setZipcode("");
+    setCurrentPassword("");
+    setNewPassword("");
   };
 
   return (
     <div className="checkout-container">
-      <h1 className="checkout-heading">Customer Info</h1>
+      <h1 className="checkout-heading">My Account</h1>
       <div className="customer-info">
         <div className="form-group">
           <label htmlFor="firstName" className="form-label">
@@ -81,63 +78,35 @@ const Checkout = () => {
         </div>
 
         <div className="form-group">
-          <label htmlFor="address" className="form-label">
-            Address:
+          <label htmlFor="currentpassword" className="form-label">
+            Current Password:
           </label>
           <input
             type="text"
-            placeholder="House #1 Street #1"
-            id="address"
+            id="currentpassword"
             className="form-input"
-            value={address}
-            onChange={(e) => setAddress(e.target.value)}
+            value={currentPassword}
+            onChange={(e) => setCurrentPassword(e.target.value)}
           />
 
-          <label htmlFor="zipcode" className="form-label">
-            Zip-Code:
-          </label>
-          <input
-            placeholder="e.g. 544444"
-            type="text"
-            id="zipcode"
-            className="form-input"
-            value={zipcode}
-            onChange={(e) => setZipcode(e.target.value)}
-          />
-        </div>
-
-        <div className="form-group">
-          <label htmlFor="city" className="form-label">
-            City:
+          <label htmlFor="newpassword" className="form-label">
+            New Passsword:
           </label>
           <input
             type="text"
-            placeholder="California"
-            id="city"
+            id="newpassword"
             className="form-input"
-            value={city}
-            onChange={(e) => setCity(e.target.value)}
-          />
-
-          <label htmlFor="country" className="form-label">
-            Country:
-          </label>
-          <input
-            type="text"
-            placeholder="USA"
-            id="country"
-            className="form-input"
-            value={country}
-            onChange={(e) => setCountry(e.target.value)}
+            value={newPassword}
+            onChange={(e) => setNewPassword(e.target.value)}
           />
         </div>
       </div>
 
-      <button onClick={handlePlaceOrder} className="place-order-btn">
-        Place Order
+      <button onClick={handlePlaceOrder} className="save-changes">
+        Save Changes
       </button>
     </div>
   );
 };
 
-export default Checkout;
+export default MyAccount;

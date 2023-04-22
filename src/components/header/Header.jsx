@@ -22,6 +22,8 @@ function Header() {
         <div className="scontainer flex">
           <div className="logo">
             <img
+              className="logo-image"
+              style={{ height: "100%" }}
               onClick={() => navigate(-1)}
               src={Medicine}
               alt="Medicine logo"
@@ -40,10 +42,9 @@ function Header() {
               {showMenu && (
                 <div className="profile-dropdown">
                   <ul>
-                    <li>My Account</li>
-                    <li>My Orders</li>
-                    <li>Password</li>
-                    <li>Logout</li>
+                    <li onClick={() => navigate("myaccount")}>My Account</li>
+                    <li onClick={() => navigate("myorders")}>My Orders</li>
+                    <li onClick={() => navigate("vouchers")}>Vouchers</li>
                   </ul>
                 </div>
               )}

@@ -1,0 +1,122 @@
+/* Default styles */
+.checkout-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 1.2em;
+  padding: 1.5em;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.checkout-heading {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #0066cc;
+}
+
+.form-group {
+  margin: 10px 0;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.form-label {
+  display: inline-block;
+  font-weight: bold;
+  margin-right: 1rem;
+  width: 100px;
+}
+
+.form-input {
+  display: block;
+  max-width: 100%;
+  width: 25em;
+  margin: 1em;
+  min-height: 3.5em;
+  padding: 10px;
+  border: none;
+  background-color: #fff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.form-input:focus {
+  outline: none;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+}
+
+.form-group__wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.save-changes {
+  margin-top: 30px;
+  padding: 10px 20px;
+  font-size: 1.5em;
+  font-weight: bold;
+  color: white;
+  background-color: #00b300;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  margin-left: 5.5em;
+}
+
+.save-changes:hover {
+  color: #00b300;
+  background-color: white;
+  border: 1px solid black;
+}
+
+/* Media queries */
+
+@media (max-width: 999px) {
+  /* Adjust checkout container margin for smaller screens */
+  .checkout-container {
+    margin: 1em;
+  }
+
+  /* Make form inputs full width for smaller screens */
+  .form-input {
+    width: 100%;
+  }
+
+  /* Adjust button margin for smaller screens */
+  .save-changes {
+    margin-left: 5em;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Make font size smaller for very small screens */
+  .checkout-heading {
+    font-size: 1.2em;
+  }
+
+  /* Reduce margin for very small screens */
+  .checkout-container {
+    margin: 0.5em;
+  }
+
+  /* Reduce button padding for very small screens */
+  .save-changes {
+    right: 4.5em;
+    /* margin-right: 6em; */
+    /* padding: 8px 16px; */
+  }
+
+  /* Move labels above inputs for very small screens */
+  .form-group {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .form-label {
+    margin-top: 0.5em;
+    margin-left: 0.2em;
+  }
+}

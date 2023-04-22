@@ -1,11 +1,12 @@
 import React from "react";
 import Checkout from "../../components/header/Checkout";
-const Checkout = () => {
+const CheckoutPage = () => {
   return (
-    <div>
+    <>
+      {" "}
       <Checkout />
-    </div>
+    </>
   );
 };
 
-export default Checkout;
+export default CheckoutPage;

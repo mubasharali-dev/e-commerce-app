@@ -9,6 +9,10 @@
   align-items: flex-start;
   margin: 1em;
   cursor: pointer;
+  height: 2em;
+}
+.logo-image {
+  margin-top: 0.3em;
 }
 
 .searchIcon {
@@ -52,12 +56,12 @@ input:focus {
   justify-content: flex-end;
   align-items: center;
   margin-left: auto;
-  margin-right: 1em;
+  margin-right: 0.5em;
 }
 
 .profileIcon {
   cursor: pointer;
-  font-size: 3rem;
+  font-size: 2.5rem;
   color: #806060;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   padding: 0.2em;

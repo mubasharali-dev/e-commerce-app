@@ -1,0 +1,67 @@
+.horizontal-rule {
+  margin-top: 1.5em;
+}
+
+.myorders {
+  margin-top: 0.5em;
+  color: #0066cc;
+  font-size: 1.5em;
+  left: 0;
+  display: flex;
+}
+.orders-container {
+  margin: 1em;
+}
+.orders-table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.orders-table td,
+.orders-table th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.orders-table th {
+  background-color: #f2f2f2;
+}
+
+.orders-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.orders-table tr:hover {
+  background-color: #ddd;
+}
+
+.orders-table .date {
+  width: 20%;
+}
+
+.orders-table .order-number {
+  width: 25%;
+}
+
+.orders-table .status {
+  width: 20%;
+}
+
+.orders-table .total {
+  width: 15%;
+}
+
+.orders-table .actions {
+  width: 20%;
+}
+
+.orders-table .actions a {
+  display: inline-block;
+  margin-right: 10px;
+}
+.total {
+  font-weight: bold;
+  color: #0066cc;
+}
