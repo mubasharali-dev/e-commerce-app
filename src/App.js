@@ -7,6 +7,8 @@ import CheckoutPage from "./pages/checkout/CheckoutPage";
 import Account from "./pages/account/Account";
 import Orders from "./pages/details/Orders";
 import VouchersPage from "./pages/vouchers/VouchersPage";
+import About from "./components/headerlinks/About";
+import ContactPage from "./pages/navdotlinks/ContactPage";
 
 function App() {
   return (
@@ -19,6 +21,8 @@ function App() {
           <Route path="/myaccount" element={<Account />} />
           <Route path="/myorders" element={<Orders />} />
           <Route path="/vouchers" element={<VouchersPage />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<ContactPage />} />
         </Routes>
         <Footer />
       </Router>

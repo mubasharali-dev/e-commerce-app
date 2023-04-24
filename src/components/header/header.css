@@ -50,13 +50,18 @@ input:focus {
 }
 
 /* New styles for dropdown */
+.right-nav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex: 1;
+}
+
 .profile {
   position: relative;
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  margin-left: auto;
-  margin-right: 0.5em;
 }
 
 .profileIcon {
@@ -67,9 +72,16 @@ input:focus {
   padding: 0.2em;
   transition: 0.3s;
   border-radius: 0.5em;
-  margin-left: 1rem;
 }
-
+.profileDots {
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 2.8rem;
+  color: #806060;
+  padding: 0.1em;
+  transition: 0.3s;
+  border-radius: 0.5em;
+}
 .profile-dropdown {
   position: absolute;
   top: 100%;
@@ -133,6 +145,9 @@ input:focus {
 
   .search {
     margin-left: 1em;
+  }
+  .search input {
+    width: 24em;
   }
 
   .search__input {
