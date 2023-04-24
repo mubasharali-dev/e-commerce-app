@@ -1,5 +1,10 @@
 import "./App.css";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  useLocation,
+} from "react-router-dom";
 import Header from "./components/header/Header";
 import Home from "./pages/home/Home";
 import Footer from "./components/footer/Footer";
@@ -24,10 +29,16 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<ContactPage />} />
         </Routes>
-        <Footer />
+        <FooterRouter />
       </Router>
     </div>
   );
+}
+
+function FooterRouter() {
+  const location = useLocation();
+  const showFooter = location.pathname === "/";
+  return showFooter ? <Footer /> : null;
 }
 
 export default App;
